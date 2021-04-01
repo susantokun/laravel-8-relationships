@@ -10,7 +10,7 @@ class HobbyController extends Controller
     public function __invoke(Request $request)
     {
         $pagination = 5;
-        $hobbies    = Hobby::orderBy('created_at', 'desc')->paginate($pagination);
+        $hobbies    = Hobby::withCount('users')->orderBy('created_at', 'desc')->paginate($pagination);
 
         return view('many-to-many.hobbies', [
             'title'   => 'Many to Many Hobby',

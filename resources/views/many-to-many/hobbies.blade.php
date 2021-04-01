@@ -20,6 +20,7 @@
                         <th class="px-6 py-3 font-bold text-center uppercase">No</th>
                         <th class="px-6 py-3 font-bold text-left uppercase">Name</th>
                         <th class="px-6 py-3 font-bold text-left uppercase">Hobbies</th>
+                        <th class="px-6 py-3 font-bold text-left uppercase">#</th>
                     </tr>
                 </thead>
                 <tbody class="text-sm text-gray-700 bg-white divide-y divide-gray-300">
@@ -33,6 +34,7 @@
                             {{ $user->name }}<br />
                             @endforeach
                         </td>
+                        <td class="w-10 px-6 py-3 leading-6 sm:w-auto">{{ $hobby->users_count }}</td>
                     </tr>
                     @endforeach
                     @else

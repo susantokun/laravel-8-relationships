@@ -2,7 +2,7 @@
     <x-slot name="title">{{ $title }}</x-slot>
 
     {{-- header content --}}
-    <div class="px-6 py-4 mb-4 overflow-hidden border rounded-lg shadow-sm border-gray-300 bg-gray-200">
+    <div class="px-6 py-4 mb-4 overflow-hidden bg-gray-200 border border-gray-300 rounded-lg shadow-sm">
         <div class="flex flex-col justify-between sm:flex-row">
             <div class="text-center sm:text-left flex-start">
                 <h3 class="text-lg font-semibold leading-6 text-gray-800">Data {{ $title }}</h3>
@@ -12,10 +12,10 @@
     </div>
 
     {{-- table --}}
-    <div class="overflow-hidden border rounded-lg border-gray-300">
+    <div class="overflow-hidden border border-gray-300 rounded-lg">
         <div class="overflow-x-auto">
             <table class="min-w-full">
-                <thead class="text-sm border-b select-none border-gray-300 bg-gray-200">
+                <thead class="text-sm bg-gray-200 border-b border-gray-300 select-none">
                     <tr>
                         <th class="px-6 py-3 font-bold text-center uppercase">No</th>
                         <th class="px-6 py-3 font-bold text-left uppercase">Name</th>
